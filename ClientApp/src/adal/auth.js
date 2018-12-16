@@ -1,10 +1,10 @@
 import {AuthenticationContext} from 'react-adal';
 
 const adalConfig = {
-    tenant: 'TenantId',
-    clientId: 'ClientId',
+    tenant: '{TenantId}',
+    clientId: '{ClientId}',
     endpoints: {
-        api: 'EndpointApi'
+        api: 'https://my-org.onmicrosoft.com/{ClientId}'
     },
     postLogoutRedirectUri: window.location.origin,
     redirectUri: 'https://localhost:5001',
